@@ -29,7 +29,6 @@ public class WordAdapter extends ArrayAdapter<Word> {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-
         // Check if the existing view is being reused, otherwise inflate the view
         View listItemView = convertView;
         if (listItemView == null) {
@@ -38,10 +37,9 @@ public class WordAdapter extends ArrayAdapter<Word> {
 
         Word currentWord = getItem(position);
 
-
         // setBackground color for textView
         LinearLayout linearLayout = (LinearLayout) listItemView.findViewById(R.id.list_item) ;
-        //linearLayout.setBackgroundColor(mColorResourceId);
+        //linearLayout.setBackgroundColor(mColorResourceId); this doesn't work like this look down
         linearLayout.setBackgroundResource(mColorResourceId);
 
         ///////////////////////// another way do same thing   /////////////////////////////////////

@@ -27,28 +27,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-//////////////////////////////////////////// using onClick in XML  /////////////////////////////////
-//    public void openNumbers(View mostafa)
-//    {
-//        Intent i = new Intent(this,NumbersActivity.class);
-//        startActivity(i);
-//    }
-//    public void openFamily(View mohamed)
-//    {
-//        Intent i = new Intent(MainActivity.this,FamilyActivity.class);
-//        startActivity(i);
-//    }
-//    public void openColors(View v)
-//    {
-//        Intent i = new Intent(getApplicationContext(),ColorsActivity.class);
-//        startActivity(i);
-//    }
-//    public void openPhrases(View view)
-//    {
-//        Intent i = new Intent(this,PhrasesActivity.class);
-//        startActivity(i);
-//    }
-////////////////////////////////////////////////////////////////////////////////////////////////////
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -90,6 +68,31 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        //////////////////////////////////////////// using onClick in XML  /////////////////////////////////
+//    public void openNumbers(View mostafa)
+//    {
+//        Intent i = new Intent(this,NumbersActivity.class);
+//        startActivity(i);
+//    }
+//    public void openFamily(View mohamed)
+//    {
+//        Intent i = new Intent(MainActivity.this,FamilyActivity.class);
+//        startActivity(i);
+//    }
+//    public void openColors(View v)
+//    {
+//        Intent i = new Intent(getApplicationContext(),ColorsActivity.class);
+//        startActivity(i);
+//    }
+//    public void openPhrases(View view)
+//    {
+//        Intent i = new Intent(this,PhrasesActivity.class);
+//        startActivity(i);
+//    }
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
