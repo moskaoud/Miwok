@@ -1,15 +1,18 @@
 package com.example.android.miwok;
 
 import android.content.Context;
+import android.media.MediaPlayer;
 import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -42,6 +45,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
         //linearLayout.setBackgroundColor(mColorResourceId); this doesn't work like this look down
         linearLayout.setBackgroundResource(mColorResourceId);
 
+
         ///////////////////////// another way do same thing   /////////////////////////////////////
         // Set the theme color for the list item
 //        View textContainer = listItemView.findViewById(R.id.list_item);
@@ -56,6 +60,9 @@ public class WordAdapter extends ArrayAdapter<Word> {
 
         TextView defaultTextView = (TextView) listItemView.findViewById(R.id.default_text_view);
         defaultTextView.setText(currentWord.getDefaultTranslation());
+
+
+        //TextView textView= (TextView)listItemView.findViewById(R.raw.family_son);
 
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
 //        imageView.setImageResource(local_word.getImageResourceId());
