@@ -36,6 +36,9 @@ public class PhrasesActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
                 Word word= phrases.get(i);
+
+                releaseMediaPlayer();
+
                 mMediaPlayer = MediaPlayer.create(getApplicationContext(),word.getAudioResourceID());
                 mMediaPlayer.start();
                 mMediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
