@@ -36,7 +36,8 @@ public class PhrasesActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
                 Word word= phrases.get(i);
-
+                // Release the media player if it currently exists because we are about to
+                // play a different sound file
                 releaseMediaPlayer();
 
                 mMediaPlayer = MediaPlayer.create(getApplicationContext(),word.getAudioResourceID());
