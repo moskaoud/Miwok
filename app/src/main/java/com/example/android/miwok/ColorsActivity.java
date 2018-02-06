@@ -50,6 +50,12 @@ public class ColorsActivity extends AppCompatActivity {
         listColors.setAdapter(colorAdapter);
 
     }
+    @Override
+    protected void onStop() {
+        super.onStop();
+        releaseMediaPlayer();
+    }
+
     /**
      * Clean up the media player by releasing its resources.
      */
