@@ -41,7 +41,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
         Word currentWord = getItem(position);
 
         // setBackground color for textView
-        LinearLayout linearLayout = (LinearLayout) listItemView.findViewById(R.id.list_item) ;
+        LinearLayout linearLayout = (LinearLayout) listItemView.findViewById(R.id.text_containerrrr) ;
         //linearLayout.setBackgroundColor(mColorResourceId); this doesn't work like this look down
         linearLayout.setBackgroundResource(mColorResourceId);
 
@@ -75,6 +75,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
             // Otherwise hide the ImageView (set visibility to GONE)
             imageView.setVisibility(View.GONE);
         }
+
 
         return listItemView;
     }
